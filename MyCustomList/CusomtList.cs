@@ -6,16 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustList
 {
-    class Program
+    class CusomtList
     {
-        static void Main(string[] args)
-        {
-
-
-
-        }
-
-
-
     }
 }
