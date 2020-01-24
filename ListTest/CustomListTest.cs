@@ -86,7 +86,7 @@ namespace ListTest
         {
             //arrange
             CustomList<int> testList = new CustomList<>(int);
-            int expected = 6;
+            int expected = 8;       //array duplicates
             int actual;
 
             //act
@@ -112,8 +112,13 @@ namespace ListTest
             int expected = 1;
             int actual;
 
+            testList.Add(22);
+            testList.Add(12);
+            testList.Add(66);
+            testList.Add(77);
+
             //act
-            testList.Remove(1);
+            testList.Remove(22);
             actual = testList[0];
 
             //assert
@@ -126,9 +131,14 @@ namespace ListTest
         {
             //arrange
             CustomListTest<string> testList = new CustomList<string>();
-            string expected = 1;
+            string expected = "3";
             string actual;
-
+           
+            testList.Add("Twerk");
+            testList.Add("Bankhead Bounce");
+            testList.Add("MC Hammer");
+            testList.Add("Chi-town Slide");
+            
             //act
             testList.Remove("Twerk");
             actual = testList.Count;
@@ -146,11 +156,14 @@ namespace ListTest
             bool expected = true;
             bool actual;
 
+            testList.Add(false);
+            testList.Add(true);
+            testList.Add(true);
+            testList.Add(false);
+
             //act
-            testList.Add(false);
-            testList.Add(true);
-            testList.Add(true);
-            testList.Add(false);
+            testList.Remove(true);
+            actual = testList[0];
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -161,15 +174,18 @@ namespace ListTest
         public void Remove_RemoveItemFromListOfMultipleItems_CountDecreasesFromAmountTotal()
         {
             //arrange
-            CustomList<double> testList = new CustomeList<double>();
+            CustomList<double> testList = new CustomList<double>();
             double expected = 3;
             double actual;
 
-            //act
             testList.Add(52);
             testList.Add(23);
             testList.Add(84);
             testList.Add(28);
+
+            //act
+            testList.Remove(52);
+            actual = testList.Count;
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -184,8 +200,6 @@ namespace ListTest
             float expected = 6;
             float actual;
 
-            //act
-
             testList.Add(22);
             testList.Add(12);
             testList.Add(66);
@@ -193,6 +207,11 @@ namespace ListTest
 
             testList.Add(88);
             testList.Add(99);
+
+            //act
+            testList.List.Remove(22);
+            actual = testList.Capacity;
+
 
 
             //assert
