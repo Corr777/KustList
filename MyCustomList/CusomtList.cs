@@ -12,19 +12,27 @@ namespace CustList
         T[] items;
         private int count;
         private int capacity;
+        
+        public int Count
+        {
+            get { return count; } set { count = value; }
 
+        }
 
-        //public int Count
-        //{
-        //    get and/or set 'count'
-        //}
+        public int Capacity
+        {
+            get { return capacity; }
+            set { count = value; }
+
+        }
 
         //constructor (Spawn) (Set Value)
         public CusomtList() 
         {
             count = 0;
-            capacity = 4;
+            capacity = 8;
             items = new T[capacity];
+            items = new T[count];
         
         }
 
@@ -33,6 +41,7 @@ namespace CustList
         public void Add(T itemToAdd) 
         {
             items[0] = itemToAdd;
+            
             //should add a value to our list (to the end)
             //increment count
         
