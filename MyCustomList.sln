@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomList", "MyCustomList\MyCustomList.csproj", "{76D064B9-D6DC-432C-9F04-BD315E1FEE68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustList", "MyCustomList\CustList.csproj", "{76D064B9-D6DC-432C-9F04-BD315E1FEE68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListTest", "ListTest\ListTest.csproj", "{54A91A48-F1B4-4645-8D96-9453679CDE7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomTest", "ListTest\MyCustomTest.csproj", "{54A91A48-F1B4-4645-8D96-9453679CDE7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
