@@ -15,17 +15,17 @@ namespace CustList
         
         public int Count
         {
-            get { return count; } set { count = value; }
+            get { return count; } set { count = 0;}
 
         }
 
-        public int Capacity
+        public int Capicity 
         {
             get { return capacity; }
-            set { count = value; }
+            set { count = 8; }
 
         }
-
+            
         //constructor (Spawn) (Set Value)
         public CusomtList() 
         {
@@ -40,8 +40,18 @@ namespace CustList
         //memeber methods (CAN DO)
         public void Add(T itemToAdd) 
         {
-            items[0] = itemToAdd;
+            for (int i = 0; i < length; i++)
+            {
+
+            }
+
             
+            
+            
+            
+            
+            
+            items[0] = itemToAdd;
             //should add a value to our list (to the end)
             //increment count
         
