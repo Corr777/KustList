@@ -13,16 +13,16 @@ namespace CustList
             CusomtList<int> testlist = new CusomtList<int>();
 
             testlist.Add(10);
-            testlist.Add(-10)
+            testlist.Add(-10);
 
             //CustomList<string> customList2 = new CustomList<string>();
 
-            List<int> numbers = new List<int>();
+            //List<int> numbers = new List<int>();
 
             //numbers.Add(1);
-            //numbers.Add(22);
-            //numbers.Add(33);
-            //numbers.Add(44);
+            //numbers.Add(10);
+            //numbers.Add(15);
+            //numbers.Add(20);
 
         }
 

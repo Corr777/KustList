@@ -29,7 +29,7 @@ namespace ListTest
         {
             //arrange
             CustomListTest<string> testList = new CustomList<string>();
-            string expected = 1;
+            string expected = "1";
             string actual;
 
             //act
@@ -90,13 +90,13 @@ namespace ListTest
             int actual;
 
             //act
-            testList.Add(22);
+            testList.Add(9);
             testList.Add(12);
-            testList.Add(66);
-            testList.Add(77);
+            testList.Add(20);
+            testList.Add(12);
 
-            testList.Add(88);
-            testList.Add(99);
+            testList.Add(2);
+            testList.Add(3);
 
 
             //assert
@@ -114,8 +114,8 @@ namespace ListTest
 
             testList.Add(22);
             testList.Add(12);
-            testList.Add(66);
-            testList.Add(77);
+            testList.Add(16);
+            testList.Add(17);
 
             //act
             testList.Remove(22);
@@ -178,13 +178,13 @@ namespace ListTest
             double expected = 3;
             double actual;
 
-            testList.Add(52);
+            testList.Add(12);
             testList.Add(23);
-            testList.Add(84);
-            testList.Add(28);
+            testList.Add(14);
+            testList.Add(18);
 
             //act
-            testList.Remove(52);
+            testList.Remove(12);
             actual = testList.Count;
 
             //assert
@@ -202,11 +202,11 @@ namespace ListTest
 
             testList.Add(22);
             testList.Add(12);
-            testList.Add(66);
-            testList.Add(77);
+            testList.Add(23);
+            testList.Add(19);
 
-            testList.Add(88);
-            testList.Add(99);
+            testList.Add(28);
+            testList.Add(29);
 
             //act
             testList.List.Remove(22);

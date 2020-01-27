@@ -10,11 +10,14 @@ namespace CustList
     class CusomtList<T>
     {
         //member variable (HAS A)
-        T[] items;
-        private int  count;
+        readonly T[] instruments;
+        private int count;
         private int capacity;
-       
+        public List<>
+
         
+       
+
         public int Count
         {
             get { return count; } set { count = value;}
@@ -30,11 +33,9 @@ namespace CustList
 
         public T this[int i] 
         {
+            get { return instruments[i]; }
+            set { instruments[i] = value; }
 
-            get { return items[0]; }
-            set { Items[] = value; }
-
-        
         }
 
       
@@ -43,50 +44,69 @@ namespace CustList
         {
             count = 0;
             capacity = 4;
-            items = new T[capacity];
-            items = new T[count];
-            
+            instruments = new T[capacity];
+            instruments = new T[count];
         }
-
 
         //memeber methods (CAN DO)
         public void Add(T itemToAdd) 
         {
-            //items[1] = itemToAdd;
-            //items[2] = itemToAdd;
-            //items[3] = itemToAdd;
-            
+          
 
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < instruments.Length; i++)
             {
-
+                instruments[0] = itemToAdd;
+                instruments[1] = itemToAdd;
+                instruments[2] = itemToAdd;
+                instruments[3] = itemToAdd;
 
             }
+           
 
-            
-            
-            
-            
-            
-            
-            
             //should add a value to our list (to the end)
             //increment count
-        
-        
+
+
         }
 
 
         public void Remove(T itemToRemove) 
         {
-            items[0] item<int>.ToArray<int>();
-            items[1] = itemToRemove;
 
+            instruments[0] = itemToRemove;
+            instruments[1] = itemToRemove;
+            instruments[2] = itemToRemove;
+            instruments[3] = itemToRemove;
 
+            for (int i = 0; i < instruments.Length; i--)
+            {
+                                                            //decrement count
 
+            }
 
 
         }
+
+        public void ExtendList() 
+        {
+                                                                    //add maxed out array
+                                                                   //add new items to increase the capacity to array
+        
+        
+        
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
