@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustList
+namespace CustomList
 {
     class Program
     {
         static void Main(string[] args)
         {
-            CusomtList<int> testlist = new CusomtList<int>();
+            CustomList<int> testlist = new CustomList<int>();
 
-            testlist.Add(10);
-            testlist.Add(-10);
+            //testlist.Add(10);
+            //testlist.Add(11);
+
+            testlist.Remove(1);
+            testlist.Remove(2);
 
             //CustomList<string> customList2 = new CustomList<string>();
 

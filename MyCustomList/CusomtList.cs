@@ -1,22 +1,21 @@
 ﻿using DocumentFormat.OpenXml.Spreadsheet;
+using MySqlX.XDevAPI.Common;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustList
+namespace CustomList
 {
-    class CusomtList<T>
+    public class CustomList<T>
     {
         //member variable (HAS A)
-        readonly T[] instruments;
+        T[] instruments;
         private int count;
         private int capacity;
-        public List<>
-
-        
-       
+        private readonly int j;
 
         public int Count
         {
@@ -40,77 +39,64 @@ namespace CustList
 
       
         //constructor (Spawn) (Set Value)
-        public CusomtList() 
+        public CustomList() 
         {
             count = 0;
             capacity = 4;
             instruments = new T[capacity];
-            instruments = new T[count];
+           
         }
 
         //memeber methods (CAN DO)
         public void Add(T itemToAdd) 
         {
-          
-
-            for (int i = 0; i < instruments.Length; i++)
+            if (count == capacity)
             {
-                instruments[0] = itemToAdd;
-                instruments[1] = itemToAdd;
-                instruments[2] = itemToAdd;
-                instruments[3] = itemToAdd;
+                                        //add statement to duplicate arrray   
+                capacity *= 2;
+                T[] temporary = new T[capacity];
 
+                for (int i = 0; i < count; i++)
+                {
+
+                    temporary[j] = instruments[i];
+                                                //add item 
+
+                }
+
+                instruments = temporary;
             }
-           
 
-            //should add a value to our list (to the end)
-            //increment count
-
-
+            instruments[count] = itemToAdd;
+            count++;
         }
-
 
         public void Remove(T itemToRemove) 
         {
-
-            instruments[0] = itemToRemove;
-            instruments[1] = itemToRemove;
-            instruments[2] = itemToRemove;
-            instruments[3] = itemToRemove;
-
-            for (int i = 0; i < instruments.Length; i--)
+            if (count > capacity)
             {
-                                                            //decrement count
+                T[] temporary = new T[capacity];
+
+                for (int i = 0, j = 0; i < capacity; i++, j++)
+                {
+                    temporary[j] = instruments[i];
+
+                                                     //decrement count
+
+                }
+
+                instruments[count] = itemToRemove;
+                count--;
 
             }
-
-
+ 
         }
 
-        public void ExtendList() 
-        {
-                                                                    //add maxed out array
-                                                                   //add new items to increase the capacity to array
-        
-        
-        
-        
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
+  
 
     }
 }
+
+
+

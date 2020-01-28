@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CustList;
+using CustomList;
 
-namespace ListTest
+namespace CustomListTest
 {
     [TestClass]
     public class CustomListTest
@@ -28,8 +28,8 @@ namespace ListTest
         public void Add_AddItemToEmptyList_CountIncrements() 
         {
             //arrange
-            CustomListTest<string> testList = new CustomList<string>();
-            string expected = "1";
+            CustomList<string> testList = new CustomList<string>();
+            string expected = "Bankhead Bounce";
             string actual;
 
             //act
@@ -130,7 +130,7 @@ namespace ListTest
         public void Remove_RemoveItemFromListOfItems_CountIncrements()
         {
             //arrange
-            CustomListTest<string> testList = new CustomList<string>();
+            CustomList<string> testList = new CustomList<string>();
             string expected = "3";
             string actual;
            
