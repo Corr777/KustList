@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomList
+namespace CustomList 
 {
-    public class CustomList<T>
+    public class CustomList<T> 
     {
         //member variable (HAS A)
         T[] instruments;
@@ -91,7 +91,7 @@ namespace CustomList
             }
  
         }
-
+        
    
   
 
